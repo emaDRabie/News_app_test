@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".CategoryActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/prime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSports"
+        style="@style/btnStyle"
+        android:text="@string/sports"
+        app:layout_constraintBottom_toTopOf="@+id/btnTech"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnScience" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnTech"
+        style="@style/btnStyle"
+        android:layout_marginTop="20dp"
+        android:text="@string/technology"
+        app:layout_constraintBottom_toTopOf="@+id/btnHealth"
+        app:layout_constraintEnd_toEndOf="@+id/btnSports"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/btnSports"
+        app:layout_constraintTop_toBottomOf="@+id/btnSports" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnHealth"
+        style="@style/btnStyle"
+        android:layout_marginTop="20dp"
+        android:text="@string/health"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnTech"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/btnTech"
+        app:layout_constraintTop_toBottomOf="@+id/btnTech" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnBusiness"
+        style="@style/btnStyle"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        android:text="Business"
+        app:layout_constraintBottom_toTopOf="@+id/btnScience"
+        app:layout_constraintEnd_toEndOf="@+id/btnScience"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/btnScience"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnScience"
+        style="@style/btnStyle"
+        android:layout_marginBottom="20dp"
+        android:text="Science"
+        app:layout_constraintBottom_toTopOf="@+id/btnSports"
+        app:layout_constraintEnd_toEndOf="@+id/btnHealth"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/btnHealth"
+        app:layout_constraintTop_toBottomOf="@+id/btnBusiness" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
