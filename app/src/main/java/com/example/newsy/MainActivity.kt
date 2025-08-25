@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
         loadNews(selectedCategory)
 
     }
-
+    // another change
     // this is change to test
     private fun loadNews(category: String) {
         val interceptor = HttpLoggingInterceptor()
