@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
         loadNews(selectedCategory)
 
     }
-///////////
+///////////             */////////*/*/*/*
     private fun loadNews(category: String) {
         val interceptor = HttpLoggingInterceptor()
         interceptor.setLevel(HttpLoggingInterceptor.Level.BASIC)
